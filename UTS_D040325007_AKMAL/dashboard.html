@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Keuangan - PT Prima Akuntindo</title>
+    <!-- External CSS Wajib -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Layout 2 Kolom: Sidebar di kiri dan Konten Utama di kanan -->
+    <div class="dashboard-layout">
+        
+        <!-- Kolom Sidebar (250px, background #212529) -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <h2 class="sidebar-title">Menu Utama</h2>
+                <nav>
+                    <ul class="sidebar-menu">
+                        <li><a href="dashboard.html" class="active">&gt; Dashboard</a></li>
+                        <li><a href="jurnal_umum.html">&gt; Jurnal</a></li>
+                        <li><a href="#">&gt; Buku Besar</a></li>
+                        <li><a href="laba_rugi.html">&gt; Laba Rugi</a></li>
+                        <li><a href="#">&gt; Neraca</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="sidebar-footer">
+                <a href="login.html" class="logout-link">[Logout]</a>
+            </div>
+        </aside>
+
+        <!-- Kolom Konten Utama (Mengambil sisa lebar layar dengan flex: 1) -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>DASHBOARD KEUANGAN</h1>
+                <p>Selamat datang, Manajer Keuangan!</p>
+            </header>
+
+            <!-- Komponen Card Saldo yang sejajar secara horizontal -->
+            <section class="summary-cards">
+                <article class="summary-card">
+                    <h3 class="card-title">SALDO KAS</h3>
+                    <p class="card-value">Rp 150.000.000</p>
+                </article>
+
+                <article class="summary-card">
+                    <h3 class="card-title">PIUTANG</h3>
+                    <p class="card-value">Rp 45.500.000</p>
+                </article>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>

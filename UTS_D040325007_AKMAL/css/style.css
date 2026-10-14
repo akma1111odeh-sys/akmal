@@ -1,0 +1,585 @@
+/* ==========================================================================
+   UTS PEMROGRAMAN WEB - D3 SISTEM INFORMASI AKUNTANSI
+   STUDI KASUS: PT PRIMA AKUNTINDO
+   File: style.css (External CSS bersama untuk seluruh halaman)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. AWAL 
+   -------------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f607;
+    color: #212529;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+/* --------------------------------------------------------------------------
+   2. TOMBOL
+   -------------------------------------------------------------------------- */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #0d6e07;
+    color: #ffffff;
+    border-color: #0d6e07;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5c636a;
+    border-color: #565e64;
+}
+
+/* Navigasi bantuan / link kembali */
+.nav-back {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+.nav-back:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   3. HALAM LOGIN
+   -------------------------------------------------------------------------- */
+.login-body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f607;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 35px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212529;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.login-form .form-group {
+    margin-bottom: 18px;
+}
+
+.login-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #0d6e07;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background-color: #0d6e07;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 8px;
+}
+
+.btn-login:hover {
+    background-color: #0b5ed7;
+}
+
+/* --------------------------------------------------------------------------
+   4. DASHBOARD KEAUANGAN 
+   -------------------------------------------------------------------------- */
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #212529;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px;
+    flex-shrink: 0;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #373b3e;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar-menu li a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #343a40;
+    color: #0d6efd;
+}
+
+.sidebar-menu li a.active {
+    background-color: #0d6e07;
+    color: #ffffff;
+}
+
+.sidebar-footer {
+    padding-top: 20px;
+    border-top: 1px solid #373b3e;
+}
+
+.logout-link {
+    display: block;
+    color: #dc3545;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.logout-link:hover {
+    background-color: rgba(220, 53, 69, 0.15);
+    color: #ff6b6b;
+}
+
+/* Kolom Konten Utama mengambil sisa layar (flex: 1) */
+.main-content {
+    flex: 1;
+    background-color: #f4f607;
+    padding: 35px 40px;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #212529;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.dashboard-header p {
+    font-size: 15px;
+    color: #6c757d;
+}
+
+/* Card ringkasan saldo sejajar secara horizontal */
+.summary-cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.summary-card {
+    background-color: #ffffff;
+    flex: 1;
+    min-width: 240px;
+    max-width: 320px;
+    padding: 25px 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #495057;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.summary-card .card-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: #212529;
+}
+
+/* --------------------------------------------------------------------------
+   5. FORM INPUT JURNAL UMUM 
+   -------------------------------------------------------------------------- */
+.form-page-wrapper {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 580px;
+    padding: 35px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #212529;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.journal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Form harus sejajar (label di sebelah kiri, input di sebelah kanan) */
+.form-row {
+    display: flex;
+    align-items: center;
+}
+
+.form-row.align-top {
+    align-items: flex-start;
+}
+
+.form-row .form-label {
+    width: 150px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+    flex-shrink: 0;
+}
+
+.form-row .form-input-wrapper {
+    flex: 1;
+}
+
+/* Styling input dengan padding user-friendly */
+.form-control {
+    width: 100%;
+    padding: 9px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #212529;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6e07;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 70px;
+}
+
+/* Radio buttons container */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    cursor: pointer;
+    accent-color: #0d6e07;
+}
+
+/* Tombol aksi formulir */
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    padding-left: 150px; /* Sejajar dengan input */
+}
+
+/* --------------------------------------------------------------------------
+   6.TABEL LAPORAN LABA RUGI
+   -------------------------------------------------------------------------- */
+.report-page-wrapper {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.report-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 720px;
+    padding: 35px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+}
+
+.report-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.report-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212529;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.report-header h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 4px;
+}
+
+.report-header p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Tabel Laporan Laba Rugi */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.report-table th,
+.report-table td {
+    padding: 12px 16px;
+    border: 1px solid #dee2e6;
+}
+
+/* Header tabel berlatar belakang warna abu-abu gelap dengan teks warna putih */
+.report-table th {
+    background-color: #343a40;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+}
+
+.report-table th.text-center {
+    text-align: center;
+}
+
+.report-table th.text-right {
+    text-align: right;
+}
+
+/* Pengaturan lebar kolom tabel laporan */
+.report-table .col-kode {
+    width: 15%;
+    text-align: center;
+}
+
+.report-table .col-keterangan {
+    width: 55%;
+}
+
+.report-table .col-nominal {
+    width: 30%;
+}
+
+/* Zebra-striping: baris genap dan ganjil memiliki background sedikit berbeda */
+.report-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.report-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.report-table tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Baris terakhir (Total Laba Bersih) dicetak tebal dan kolom nominalnya rata kanan */
+.report-table tfoot tr {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
+.report-table tfoot td {
+    font-weight: bold;
+    color: #212529;
+}
+
+/* --------------------------------------------------------------------------
+   7. MEDIA
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .main-content {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .form-row .form-label {
+        width: 100%;
+    }
+
+    .form-actions {
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    .report-container,
+    .form-container {
+        padding: 25px 20px;
+    }
+}

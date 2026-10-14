@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Jurnal Umum - PT Prima Akuntindo</title>
+    <!-- External CSS Wajib -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="form-page-wrapper">
+        <div class="form-container">
+            <a href="dashboard.html" class="nav-back">&larr; Kembali ke Dashboard</a>
+            
+            <h2 class="form-title">FORM INPUT JURNAL UMUM</h2>
+
+            <form class="journal-form" action="#" method="post">
+                
+                <!-- 1. Tanggal Transaksi: input type="date" -->
+                <div class="form-row">
+                    <label for="tanggal" class="form-label">Tanggal Transaksi</label>
+                    <div class="form-input-wrapper">
+                        <input type="date" id="tanggal" name="tanggal" class="form-control" required>
+                    </div>
+                </div>
+
+                <!-- 2. No. Bukti: input type="text" -->
+                <div class="form-row">
+                    <label for="no_bukti" class="form-label">No. Bukti</label>
+                    <div class="form-input-wrapper">
+                        <input type="text" id="no_bukti" name="no_bukti" class="form-control" placeholder="Contoh: BKK-001" required>
+                    </div>
+                </div>
+
+                <!-- 3. Keterangan: textarea -->
+                <div class="form-row align-top">
+                    <label for="keterangan" class="form-label">Keterangan</label>
+                    <div class="form-input-wrapper">
+                        <textarea id="keterangan" name="keterangan" rows="3" class="form-control" placeholder="Keterangan transaksi..."></textarea>
+                    </div>
+                </div>
+
+                <!-- 4. Nama Akun: select -->
+                <div class="form-row">
+                    <label for="nama_akun" class="form-label">Nama Akun</label>
+                    <div class="form-input-wrapper">
+                        <select id="nama_akun" name="nama_akun" class="form-control" required>
+                            <option value="" disabled selected>-- Pilih Akun --</option>
+                            <option value="1101">1101 - Kas</option>
+                            <option value="1102">1102 - Piutang Usaha</option>
+                            <option value="1103">1103 - Perlengkapan</option>
+                            <option value="4101">4101 - Pendapatan Jasa</option>
+                            <option value="5101">5101 - Beban Gaji Karyawan</option>
+                            <option value="5102">5102 - Beban Sewa Gedung</option>
+                            <option value="5103">5103 - Beban Perlengkapan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- 5. Posisi Saldo: input type="radio" -->
+                <div class="form-row">
+                    <span class="form-label">Posisi Saldo</span>
+                    <div class="form-input-wrapper">
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="posisi_saldo" value="Debit" checked> Debit
+                            </label>
+                            <label>
+                                <input type="radio" name="posisi_saldo" value="Kredit"> Kredit
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Nominal (Rp): input type="number" -->
+                <div class="form-row">
+                    <label for="nominal" class="form-label">Nominal (Rp)</label>
+                    <div class="form-input-wrapper">
+                        <input type="number" id="nominal" name="nominal" class="form-control" placeholder="0" min="0" required>
+                    </div>
+                </div>
+
+                <!-- Tombol Aksi: Simpan Transaksi & Batal -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">[ SIMPAN TRANSAKSI ]</button>
+                    <a href="dashboard.html" class="btn btn-secondary">[ BATAL ]</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
