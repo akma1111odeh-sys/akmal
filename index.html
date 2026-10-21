@@ -1,63 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
+  <meta name="description" content="Daftar pertemuan kuliah — kumpulan materi dan latihan per pertemuan.">
+  <title>Daftar Pertemuan — Portal Kuliah</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<h1>Daftar Pertemuan</h1>
-<ul>
-  <li><a href="pertemuan1.html">pertemuan1</a></li>
-  <li><a href="pertemuan2.html">pertemuan2</a></li>
-  <li><a href="pertemuan3.html">pertemuan3</a></li>
-  <li><a href="pertemuan4.html">pertemuan4</a></li>
-  <li><a href="pertemuan5.html">pertemuan5</a></li>
-  
-  <li><a href="pertemuan6.html">pertemuan6</a></li>
-<ul>
-  <li><a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-1-sintaks-dasar.html">Sintaks Dasar</a></li>
-  <li><a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-2-selector-warna.html">Selector Warna</a></li>
-  <li><a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-3-box-model.html">Fonts dan Colors</a></li>
-  <li><a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-4-flexbox.html">Layout</a></li>
-  <li><a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-5-css-grid.html">CSS Grid</a></li>
-  <li><a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-6-responsif.html">Responsive Design</a></li>
-  <li><a href="./pertemuan6/02_Latihan_Dasar/sebelum_2/kasus-1-profil.html">Profil</a></li>
-  <li><a href="./pertemuan6/02_Latihan_Dasar/sebelum_2/kasus-2-navbar.html">Navbar</a></li>
-  <li><a href="./pertemuan6/02_Latihan_Dasar/sebelum_2/kasus-3-galeri.html">Galeri</a></li>
-  <li><a href="./pertemuan6/02_Latihan_Dasar/sebelum_2/kasus-4-landing.html">Kartu Produk</a></li>
-</ul>
-  <li><a href="#">pertemuan7</a></li>
-<ul>
-  <li><a href="./pertemuan7/01-kartu-profil.html">kartu profil</a></li>
-  <li><a href="./pertemuan7/02-form-login.html">form login</a></li>
-  <li><a href="./pertemuan7/03-navbar.html">navbar</a></li>
-  <li><a href="./pertemuan7/04-kartu-produk.html">kartu produk</a></li>
-  <li><a href="./pertemuan7/05-pricing-table.html">pricing table</a></li>
-  <li><a href="./pertemuan7/06-footer.html">footer</a></li>
-  <li><a href="./pertemuan7/07-artikel-blog.html">artikel blog</a></li>
-  <li><a href="./pertemuan7/08-hero-section.html">hero section</a></li>
-  <li><a href="./pertemuan7/09-testimoni.html">testimoni</a></li>
-  <li><a href="./pertemuan7/10-galeri-gambar.html">galeri gambar</a></li>
-</ul>
-  <li><a href="./UTS_D040325007_AKMAL/login.html">UTS - PEERTEMUAN 8 UTS</a></li>
-  <ul>
-    <li><a href="./UTS_D040325007_AKMAL/login.html">Soal 1: Login </a></li>
-    <li><a href="./UTS_D040325007_AKMAL/dashboard.html">Soal 2: Dashboard </a></li>
-    <li><a href="./UTS_D040325007_AKMAL/jurnal_umum.html">Soal 3: Input Jurnal Umum </a></li>
-    <li><a href="./UTS_D040325007_AKMAL/laba_rugi.html">Soal 4: Laporan Laba Rugi</a></li>
-  </ul>
-  <li><a href="pertemuan9.html">pertemuan9</a></li>
-  <li><a href="pertemuan10.html">pertemuan10</a></li>
-  <li><a href="pertemuan11.html">pertemuan11</a></li>
-  <li><a href="pertemuan12.html">pertemuan12</a></li>
-  <li><a href="pertemuan13.html">pertemuan13</a></li>
-  <li><a href="pertemuan14.html">pertemuan14</a></li>
-  <li><a href="pertemuan15.html">pertemuan15</a></li>
-  <li><a href="pertemuan16.html">pertemuan16</a></li>
-</ul>
 
+<body>
+
+  <!-- ═══ Background Effects ═══ -->
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <div class="container">
+
+    <!-- ═══ Header ═══ -->
+    <header class="page-header">
+      <h1 data-text="Daftar Pertemuan">Daftar Pertemuan</h1>
+      <p class="subtitle">Kumpulan materi & latihan per sesi perkuliahan</p>
+      <hr class="header-line">
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-value">16</span>
+          <span class="stat-label">Pertemuan</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">20+</span>
+          <span class="stat-label">Materi</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">1</span>
+          <span class="stat-label">UTS</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ═══ Daftar Pertemuan ═══ -->
+    <ul class="meeting-list">
+
+      <!-- Pertemuan 1 -->
+      <li class="meeting-item">
+        <a href="pertemuan1.html" class="meeting-link" id="link-pertemuan-1">
+          <span class="meeting-number">01</span>
+          <span class="meeting-text">
+            <span class="meeting-title">Pertemuan 1</span>
+          </span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <!-- Pertemuan 2 -->
+      <li class="meeting-item">
+        <a href="pertemuan2.html" class="meeting-link" id="link-pertemuan-2">
+          <span class="meeting-number">02</span>
+          <span class="meeting-text">
+            <span class="meeting-title">Pertemuan 2</span>
+          </span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <!-- Pertemuan 3 -->
+      <li class="meeting-item">
+        <a href="pertemuan3.html" class="meeting-link" id="link-pertemuan-3">
+          <span class="meeting-number">03</span>
+          <span class="meeting-text">
+            <span class="meeting-title">Pertemuan 3</span>
+          </span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <!-- Pertemuan 4 -->
+      <li class="meeting-item">
+        <a href="pertemuan4.html" class="meeting-link" id="link-pertemuan-4">
+          <span class="meeting-number">04</span>
+          <span class="meeting-text">
+            <span class="meeting-title">Pertemuan 4</span>
+          </span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <!-- Pertemuan 5 -->
+      <li class="meeting-item">
+        <a href="pertemuan5.html" class="meeting-link" id="link-pertemuan-5">
+          <span class="meeting-number">05</span>
+          <span class="meeting-text">
+            <span class="meeting-title">Pertemuan 5</span>
+          </span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <!-- Pertemuan 6 + Sub-materi -->
+      <li class="meeting-item">
+        <a href="pertemuan6.html" class="meeting-link" id="link-pertemuan-6">
+          <span class="meeting-number">06</span>
+          <span class="meeting-text">
+            <span class="meeting-title">Pertemuan 6</span>
+            <span class="meeting-desc">10 materi latihan dasar</span>
+          </span>
+          <span class="meeting-arrow">→</span>
+        </a>
+        <div class="sub-section">
+          <ul class="sub-list">
+            <li class="meeting-item">
+              <a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-1-sintaks-dasar.html" class="meeting-link" id="link-p6-sintaks">
+                <span class="meeting-number emoji">📝</span>
+                <span class="meeting-text"><span class="meeting-title">Sintaks Dasar</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-2-selector-warna.html" class="meeting-link" id="link-p6-selector">
+                <span class="meeting-number emoji">🎨</span>
+                <span class="meeting-text"><span class="meeting-title">Selector Warna</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-3-box-model.html" class="meeting-link" id="link-p6-fonts">
+                <span class="meeting-number emoji">🔤</span>
+                <span class="meeting-text"><span class="meeting-title">Fonts dan Colors</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-4-flexbox.html" class="meeting-link" id="link-p6-layout">
+                <span class="meeting-number emoji">📐</span>
+                <span class="meeting-text"><span class="meeting-title">Layout (Flexbox)</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-5-css-grid.html" class="meeting-link" id="link-p6-grid">
+                <span class="meeting-number emoji">🔲</span>
+                <span class="meeting-text"><span class="meeting-title">CSS Grid</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan6/01_Latihan_Dasar/sebelum/topik-6-responsif.html" class="meeting-link" id="link-p6-responsive">
+                <span class="meeting-number emoji">📱</span>
+                <span class="meeting-text"><span class="meeting-title">Responsive Design</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan6/02_Latihan_Dasar/sebelum_2/kasus-1-profil.html" class="meeting-link" id="link-p6-profil">
+                <span class="meeting-number emoji">👤</span>
+                <span class="meeting-text"><span class="meeting-title">Profil</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan6/02_Latihan_Dasar/sebelum_2/kasus-2-navbar.html" class="meeting-link" id="link-p6-navbar">
+                <span class="meeting-number emoji">🧭</span>
+                <span class="meeting-text"><span class="meeting-title">Navbar</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan6/02_Latihan_Dasar/sebelum_2/kasus-3-galeri.html" class="meeting-link" id="link-p6-galeri">
+                <span class="meeting-number emoji">🖼️</span>
+                <span class="meeting-text"><span class="meeting-title">Galeri</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan6/02_Latihan_Dasar/sebelum_2/kasus-4-landing.html" class="meeting-link" id="link-p6-produk">
+                <span class="meeting-number emoji">🛒</span>
+                <span class="meeting-text"><span class="meeting-title">Kartu Produk</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Pertemuan 7 + Sub-materi -->
+      <li class="meeting-item">
+        <a href="#" class="meeting-link" id="link-pertemuan-7">
+          <span class="meeting-number">07</span>
+          <span class="meeting-text">
+            <span class="meeting-title">Pertemuan 7</span>
+            <span class="meeting-desc">10 komponen UI</span>
+          </span>
+          <span class="meeting-arrow">→</span>
+        </a>
+        <div class="sub-section">
+          <ul class="sub-list">
+            <li class="meeting-item">
+              <a href="./pertemuan7/01-kartu-profil.html" class="meeting-link" id="link-p7-profil">
+                <span class="meeting-number emoji">👤</span>
+                <span class="meeting-text"><span class="meeting-title">Kartu Profil</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan7/02-form-login.html" class="meeting-link" id="link-p7-login">
+                <span class="meeting-number emoji">🔑</span>
+                <span class="meeting-text"><span class="meeting-title">Form Login</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan7/03-navbar.html" class="meeting-link" id="link-p7-navbar">
+                <span class="meeting-number emoji">🧭</span>
+                <span class="meeting-text"><span class="meeting-title">Navbar</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan7/04-kartu-produk.html" class="meeting-link" id="link-p7-produk">
+                <span class="meeting-number emoji">🛒</span>
+                <span class="meeting-text"><span class="meeting-title">Kartu Produk</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan7/05-pricing-table.html" class="meeting-link" id="link-p7-pricing">
+                <span class="meeting-number emoji">💰</span>
+                <span class="meeting-text"><span class="meeting-title">Pricing Table</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan7/06-footer.html" class="meeting-link" id="link-p7-footer">
+                <span class="meeting-number emoji">🦶</span>
+                <span class="meeting-text"><span class="meeting-title">Footer</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan7/07-artikel-blog.html" class="meeting-link" id="link-p7-blog">
+                <span class="meeting-number emoji">📰</span>
+                <span class="meeting-text"><span class="meeting-title">Artikel Blog</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan7/08-hero-section.html" class="meeting-link" id="link-p7-hero">
+                <span class="meeting-number emoji">🚀</span>
+                <span class="meeting-text"><span class="meeting-title">Hero Section</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan7/09-testimoni.html" class="meeting-link" id="link-p7-testimoni">
+                <span class="meeting-number emoji">💬</span>
+                <span class="meeting-text"><span class="meeting-title">Testimoni</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./pertemuan7/10-galeri-gambar.html" class="meeting-link" id="link-p7-galeri">
+                <span class="meeting-number emoji">🖼️</span>
+                <span class="meeting-text"><span class="meeting-title">Galeri Gambar</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- ═══ UTS Section ═══ -->
+      <li class="meeting-item">
+        <span class="section-badge uts">⚡ UTS — Pertemuan 8</span>
+        <a href="./UTS_D040325007_AKMAL/login.html" class="meeting-link" id="link-uts">
+          <span class="meeting-number accent">U</span>
+          <span class="meeting-text">
+            <span class="meeting-title">Ujian Tengah Semester</span>
+            <span class="meeting-desc">D040325007 — Akmal</span>
+          </span>
+          <span class="meeting-arrow">→</span>
+        </a>
+        <div class="sub-section">
+          <ul class="sub-list">
+            <li class="meeting-item">
+              <a href="./UTS_D040325007_AKMAL/login.html" class="meeting-link" id="link-uts-login">
+                <span class="meeting-number emoji">🔑</span>
+                <span class="meeting-text"><span class="meeting-title">Soal 1: Login</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./UTS_D040325007_AKMAL/dashboard.html" class="meeting-link" id="link-uts-dashboard">
+                <span class="meeting-number emoji">📊</span>
+                <span class="meeting-text"><span class="meeting-title">Soal 2: Dashboard</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./UTS_D040325007_AKMAL/jurnal_umum.html" class="meeting-link" id="link-uts-jurnal">
+                <span class="meeting-number emoji">📒</span>
+                <span class="meeting-text"><span class="meeting-title">Soal 3: Input Jurnal Umum</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+            <li class="meeting-item">
+              <a href="./UTS_D040325007_AKMAL/laba_rugi.html" class="meeting-link" id="link-uts-laba">
+                <span class="meeting-number emoji">💹</span>
+                <span class="meeting-text"><span class="meeting-title">Soal 4: Laporan Laba Rugi</span></span>
+                <span class="meeting-arrow">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Pertemuan 9–16 -->
+      <li class="meeting-item">
+        <span class="section-badge regular">📚 Lanjutan</span>
+      </li>
+
+      <li class="meeting-item">
+        <a href="pertemuan9.html" class="meeting-link" id="link-pertemuan-9">
+          <span class="meeting-number">09</span>
+          <span class="meeting-text"><span class="meeting-title">Pertemuan 9</span></span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <li class="meeting-item">
+        <a href="pertemuan10.html" class="meeting-link" id="link-pertemuan-10">
+          <span class="meeting-number">10</span>
+          <span class="meeting-text"><span class="meeting-title">Pertemuan 10</span></span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <li class="meeting-item">
+        <a href="pertemuan11.html" class="meeting-link" id="link-pertemuan-11">
+          <span class="meeting-number">11</span>
+          <span class="meeting-text"><span class="meeting-title">Pertemuan 11</span></span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <li class="meeting-item">
+        <a href="pertemuan12.html" class="meeting-link" id="link-pertemuan-12">
+          <span class="meeting-number">12</span>
+          <span class="meeting-text"><span class="meeting-title">Pertemuan 12</span></span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <li class="meeting-item">
+        <a href="pertemuan13.html" class="meeting-link" id="link-pertemuan-13">
+          <span class="meeting-number">13</span>
+          <span class="meeting-text"><span class="meeting-title">Pertemuan 13</span></span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <li class="meeting-item">
+        <a href="pertemuan14.html" class="meeting-link" id="link-pertemuan-14">
+          <span class="meeting-number">14</span>
+          <span class="meeting-text"><span class="meeting-title">Pertemuan 14</span></span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <li class="meeting-item">
+        <a href="pertemuan15.html" class="meeting-link" id="link-pertemuan-15">
+          <span class="meeting-number">15</span>
+          <span class="meeting-text"><span class="meeting-title">Pertemuan 15</span></span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+      <li class="meeting-item">
+        <a href="pertemuan16.html" class="meeting-link" id="link-pertemuan-16">
+          <span class="meeting-number">16</span>
+          <span class="meeting-text"><span class="meeting-title">Pertemuan 16</span></span>
+          <span class="meeting-arrow">→</span>
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- ═══ Footer ═══ -->
+    <footer class="page-footer">
+      <p class="footer-text">© 2025 <span class="footer-brand">Akmal</span> — Portal Pertemuan Kuliah</p>
+    </footer>
+
+  </div>
+
+  <!-- ═══ Scroll Progress Script ═══ -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+    });
+  </script>
 
 </body>
+
 </html>
